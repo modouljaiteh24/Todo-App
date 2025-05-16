@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="/src/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <h1>Todo</h1>
+        <div>
+          <img src="/images/icon-moon.svg" alt="Moon Icon" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="todos-container">
+          <div class="todo-form-wrapper">
+            <form action="#" class="todo-form">
+              <div class="input-group">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" class="custom-checkbox" />
+                </div>
+                <input
+                  id="input"
+                  type="text"
+                  name="todo"
+                  placeholder="Create a new todo..."
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="todos-list-wrapper">
+            <div class="todos-item-wrapper"></div>
+            <div class="todos-action-wrapper">
+              <div><span class="todos-left-count">5</span> Items left</div>
+              <div class="todos-filter-buttons">
+                <button class="active all-todos">All</button>
+                <button class="active-todos">Active</button>
+                <button class="completed-todos">Completed</button>
+              </div>
+              <div class="clear">
+                <button class="clear-button">Clear Completed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>
